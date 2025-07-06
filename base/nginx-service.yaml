@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: sample-app
+spec:
+  selector:
+    name: sample-app
+  port:
+    - port: 80
+      targetPort: 8081
