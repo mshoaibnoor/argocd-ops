@@ -4,7 +4,7 @@ metadata:
   name: sample-app
   namespace:  sampleapp
 spec:
-  project:
+  project: default
   source:
     repoURL: https://github.com/mshoaibnoor/argocd-ops.git 
     targetRevision: HEAD
