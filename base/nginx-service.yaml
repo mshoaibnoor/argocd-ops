@@ -7,6 +7,5 @@ spec:
     name: sampleapp
   ports:
     - port: 80
-      protocal: TCP
-      name: flask
+      
   type: ClusterIP

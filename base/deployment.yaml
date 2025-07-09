@@ -15,6 +15,11 @@ spec:
       containers:
       - name: sampleapp
         image: devopsjourney1/mywebapp:latest
+        ports:
+        - containerPort: 80
+        envFrom:
+        - configMapRef:
+            name: mykustom-map
         resources:
           limits:
             cpu: "500m"
