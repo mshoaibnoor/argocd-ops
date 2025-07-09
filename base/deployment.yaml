@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp-deployment
+  name: sampleapp
 spec:
   replicas: 1
   selector:
@@ -13,7 +13,7 @@ spec:
         app: sampleapp
     spec:
       containers:
-      - name: myapp-container
+      - name: sampleapp
         image: nginx:1.28
         resources:
           limits:

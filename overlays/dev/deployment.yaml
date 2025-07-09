@@ -1,13 +1,13 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp-deployment
+  name: sampleapp
 spec:
   replicas: 2 # increase the number of replicas.
   template:
     spec:
       containers:
-      - name: myapp-container
+      - name: sampleapp
         resources: # adjust resource requests and limits for testing.
           limits:
             cpu: "1"
