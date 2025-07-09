@@ -8,3 +8,6 @@ patchesStrategicMerge:
 resources:
 - ../../base
 
+configMapGenerator:
+- name: mykustom-map
+  env: config.properties

@@ -7,3 +7,6 @@ resources:
   - nginx-service.yaml
   
 
+configMapGenerator:
+- name: mykustom-map
+  env: config.properties
